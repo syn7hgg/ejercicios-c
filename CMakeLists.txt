@@ -3,4 +3,4 @@ project(clases C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(clases ordenalfabetico ordenalfabetico.c)
+add_executable(clases espar espar.c)
