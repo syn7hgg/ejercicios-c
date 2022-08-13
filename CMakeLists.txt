@@ -3,4 +3,4 @@ project(clases C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(clases espar espar.c)
+add_executable(1 ejercicios1/2.c)
