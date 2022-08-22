@@ -3,4 +3,4 @@ project(clases C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(1 ejercicios1/2.c)
+add_executable(1 ejercicios1/2.c ejercicios3/base_lecturareales.c)
