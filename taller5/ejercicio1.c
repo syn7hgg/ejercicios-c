@@ -23,6 +23,15 @@ int **creaMatriz(int n)
     return Matriz;
 }
 
+void imprimeMatrizGrafo(int **M, int nodeCount) {
+    for (int i = 0; i < nodeCount; ++i) {
+        for (int j = 0; j < nodeCount; ++j) {
+            printf("%i ", M[i][j]);
+        }
+        printf("\n");
+    }
+}
+
 void leeArchivo(char fileName[50]) {
     FILE *f = fopen(fileName, "r");
     if (f == NULL) { printf("\nArchivo inexistente."); exit(1); }
@@ -44,13 +53,7 @@ void leeArchivo(char fileName[50]) {
     }
 
     fclose(f);
-
-    for (int i = 0; i < nodeCount; ++i) {
-        for (int j = 0; j < nodeCount; ++j) {
-            printf("%i ", M[i][j]);
-        }
-        printf("\n");
-    }
+    imprimeMatrizGrafo(M, nodeCount);
 }
 
 int main() {
